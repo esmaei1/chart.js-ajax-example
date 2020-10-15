@@ -1,3 +1,15 @@
+let barChartData = {
+            labels: JSON.parse('{!! $month_names !!}'),
+            datasets: [{
+                label: 'تعداد نظرات',
+                backgroundColor: 'red',
+                borderColor: 'red',
+                borderWidth: 1,
+                data: JSON.parse('{!! $comments_count !!}')
+            },
+            ]
+        };
+
 window.onload = function() {
             let ctx = document.getElementById('example-chart').getContext('2d');
             let YearMontChart = new Chart(ctx, {
