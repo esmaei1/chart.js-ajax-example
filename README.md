@@ -1,2 +1,2 @@
 # chart.js-ajax-example
-# Update chart.js via ajax
+Update chart.js via ajax
